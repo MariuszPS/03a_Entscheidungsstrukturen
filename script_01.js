@@ -1,6 +1,5 @@
 "use strict";
 // Entscheidungsstrukturen | control flow
-
 // Deklaration + Assigment
 const ageJohn = 30;
 const ageMark = 30;
@@ -27,7 +26,6 @@ const ageMark = 30;
 /************ IF  ************/
 // TINA --> There is no alternative!
 // entweder JA oder nix ... alternativlos
-
 // if(true)
 // if(false)
 // if(isJohnOlder)
@@ -70,7 +68,6 @@ const ageMark = 30;
 // }
 
 /****** Fallunterscheidung II / CASE|SWITCH 1 ******/
-
 const firstName = "Jane";
 let job;
 
@@ -81,42 +78,41 @@ job = "driver";     // .. fährt TAXI! / UBER
 // job = "teacher";    // .. unterrichtet!
 // job = "instructor";  // .. unterrichtet!
 
-switch (job) {
-    case "driver": // Test auf ==
-        console.log(firstName + " fährt TAXI!");
-        break;
-    case "diver": // Test auf ==
-        console.log(firstName + " taucht im Neckar!");
-        break;
-    case "artist": // Test auf ==
-        console.log(firstName + " malt ein Bild!");
-        break;
+// switch (job) {
+//     case "driver": // Test auf ==
+//         console.log(firstName + " fährt TAXI!");
+//         break;
+//     case "diver": // Test auf ==
+//         console.log(firstName + " taucht im Neckar!");
+//         break;
+//     case "artist": // Test auf ==
+//         console.log(firstName + " malt ein Bild!");
+//         break;
     
-    case "teacher": 
-    case "instructor":
-        console.log(firstName + " unterrichtet!");
-        break;
-
-    default: // Black Swan !!!
-        console.log(firstName + " macht etwas anderes!");
-        break;
-}
-
-/********  Fallunterscheidung / CASE|SWITCH 2 *******/
-
-// const cond = true;
-// const a = 2;
-
-// switch (cond) {
-//     case (a == 1):
-//         console.log("a ist gleich 1")
+//     case "teacher": 
+//     case "instructor":
+//         console.log(firstName + " unterrichtet!");
 //         break;
-//     case (a == 2):
-//         console.log("a ist gleich 2")
-//         break;
-//     default:
-//         console.log("a hat einen anderen Wert")
+
+//     default: // Black Swan !!!
+//         console.log(firstName + " macht etwas anderes!");
 //         break;
 // }
+
+/********  Fallunterscheidung / CASE|SWITCH 2 *******/
+const cond = true;
+const a = 2;
+
+switch (cond) {
+    case (a == 1):
+        console.log("a ist gleich 1")
+        break;
+    case (a == 2):
+        console.log("a ist gleich 2")
+        break;
+    default:
+        console.log("a hat einen anderen Wert")
+        break;
+}
 
 
